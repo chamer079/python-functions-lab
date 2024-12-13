@@ -27,7 +27,6 @@ def calculate_area_triangle(base, height):
 def simple_interest(princ, rate, interest):
     return (princ * rate * interest) / 100
 
-
 # print('Exercise 2:', simple_interest(1000, 5, 2))
 
 
@@ -47,5 +46,43 @@ def apply_discount(price, discount):
     else:
         return(f"{discount}% discount is invalid. Enter a valid discount from 0 - 100.")
 
+# print('Exercise 3:', apply_discount(100, 25))
 
-print('Exercise 3:', apply_discount(100, 25))
+
+# Exercise 4: Convert Temperature
+#
+# Write a function called `convert_temperature` that takes a
+# temperature and a unit ('C' for Celsius, 'F' for Fahrenheit)
+# and converts the temperature to the other unit.
+# The formula for converting Celsius to Fahrenheit is (Celsius * 9/5) + 32.
+# The formula for converting Fahrenheit to Celsius is (Fahrenheit - 32) * 5/9.
+#
+# Examples:
+# convert_temperature(0, 'C') should return 32.0.
+# convert_temperature(32, 'F') should return 0.0.
+#
+# Define the function and then call it below.
+def convert_temperature(temp, temp_scale):
+    if temp_scale == "F":
+        return (temp -32) * 5/9
+    elif temp_scale == "C":
+        return (temp * 9/5) + 32
+
+# print('Exercise 4: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))
+# print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
+
+
+# Exercise 5: Sum to N
+#
+# Write a function named `sum_to` that takes a single integer n and returns the sum of all integers from 1 to n.
+#
+# Examples:
+# sum_to(6) should return 21.
+# sum_to(10) should return 55.
+#
+# Define the function and then call it below.
+
+
+
+print('Exercise 5:', sum_to(6))
+
