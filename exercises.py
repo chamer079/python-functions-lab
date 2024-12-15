@@ -81,8 +81,15 @@ def convert_temperature(temp, temp_scale):
 # sum_to(10) should return 55.
 #
 # Define the function and then call it below.
-
-
+def sum_to(n):
+    return sum(range(n + 1))
 
 print('Exercise 5:', sum_to(6))
 
+"""
+return sum(range(n + 1))
+
+sum() -> adds all items in a tuple
+range() -> returns a sequence of numbers starting from 0 - increments by 1 (default) - stops before the specified number
+
+"""
