@@ -64,7 +64,7 @@ def apply_discount(price, discount):
 # Define the function and then call it below.
 def convert_temperature(temp, temp_scale):
     if temp_scale == "F":
-        return (temp -32) * 5/9
+        return (temp - 32) * 5/9
     elif temp_scale == "C":
         return (temp * 9/5) + 32
 
@@ -111,4 +111,20 @@ def largest(num1, num2, num3):
     else:
         return num3
 
-print('Exercise 6:', largest(1, 2, 3))
+# print('Exercise 6:', largest(1, 2, 3))
+
+
+# Exercise 7: Calculate a Tip
+#
+# Create a function called `calculate_tip`. It should take the bill amount and the tip percentage (as a whole number).
+# The function should return the amount of the tip.
+#
+# Examples:
+# calculate_tip(50, 20) should return 10.
+#
+# Write your function and test its output below.
+def calculate_tip(bill, tip):
+    return bill * (tip / 100)
+
+
+print('Exercise 7:', calculate_tip(50, 20))
