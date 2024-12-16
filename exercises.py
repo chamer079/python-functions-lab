@@ -11,7 +11,7 @@
 def calculate_area_triangle(base, height):
     return (base * height) / 2
 
-# print('Exercise 1:', calculate_area_triangle(10, 5))
+print('Exercise 1:', calculate_area_triangle(10, 5))
 
 
 # Exercise 2: Calculate Simple Interest
@@ -27,7 +27,7 @@ def calculate_area_triangle(base, height):
 def simple_interest(princ, rate, interest):
     return (princ * rate * interest) / 100
 
-# print('Exercise 2:', simple_interest(1000, 5, 2))
+print('Exercise 2:', simple_interest(1000, 5, 2))
 
 
 # Exercise 3: Apply a Discount
@@ -46,7 +46,7 @@ def apply_discount(price, discount):
     else:
         return(f"{discount}% discount is invalid. Enter a valid discount from 0 - 100.")
 
-# print('Exercise 3:', apply_discount(100, 25))
+print('Exercise 3:', apply_discount(100, 25))
 
 
 # Exercise 4: Convert Temperature
@@ -68,8 +68,8 @@ def convert_temperature(temp, temp_scale):
     elif temp_scale == "C":
         return (temp * 9/5) + 32
 
-# print('Exercise 4: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))
-# print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
+print('Exercise 4: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))
+print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
 
 
 # Exercise 5: Sum to N
@@ -84,7 +84,7 @@ def convert_temperature(temp, temp_scale):
 def sum_to(n):
     return sum(range(n + 1))
 
-# print('Exercise 5:', sum_to(6))
+print('Exercise 5:', sum_to(6))
 
 """
 return sum(range(n + 1))
@@ -111,7 +111,7 @@ def largest(num1, num2, num3):
     else:
         return num3
 
-# print('Exercise 6:', largest(1, 2, 3))
+print('Exercise 6:', largest(1, 2, 3))
 
 
 # Exercise 7: Calculate a Tip
@@ -126,7 +126,7 @@ def largest(num1, num2, num3):
 def calculate_tip(bill, tip):
     return bill * (tip / 100)
 
-# print('Exercise 7:', calculate_tip(50, 20))
+print('Exercise 7:', calculate_tip(50, 20))
 
 
 # Exercise 8: Calculate Product of Numbers
@@ -147,5 +147,33 @@ def product(*nums):
 
     return total
 
-
 print('Exercise 8:', product(2, 5, 5))
+
+
+# Exercise 9: Basic Calculator
+#
+# Create a function named `basic_calculator` that takes three arguments: 
+# two numbers and a string representing an operation ('add', 'subtract', 'multiply', 'divide'). 
+# Perform the provided operation on the two numbers. In operations where the order of numbers is important, 
+# treat the first parameter as the first operand and the second parameter as the second operand.
+#
+# Examples:
+# basic_calculator(10, 5, 'subtract') should return 5.
+# basic_calculator(10, 5, 'add') should return 15.
+# basic_calculator(10, 5, 'multiply') should return 50.
+# basic_calculator(10, 5, 'divide') should return 2.
+#
+# Define the function and then call it below.
+def basic_calculator(num1, num2, operator):
+    if operator == "add":
+        return num1 + num2
+    elif operator == "subtract":
+        return num1 - num2
+    elif operator == "multiply":
+        return num1 * num2
+    elif operator == "divide":
+        return num1 / num2
+    else:
+        return "Please type out a basic mathamatical operator."
+
+print('Exercise 9 Result:', basic_calculator(10, 5, "subtract"))
